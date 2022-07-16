@@ -1,3 +1,72 @@
+p,
+h1,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 5%;
+}
+
+main {
+  display: flex;
+  padding: 5%;
+  gap: 10%;
+}
+
 h1 {
-  color: red;
+  font-size: 54px;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 30px;
+}
+
+.scores-title-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  box-shadow: 5px 5px;
+}
+
+.main-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.submit-btn {
+  align-self: flex-end;
+}
+
+ul {
+  border: 3px solid black;
+}
+
+li {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.aqua {
+  background-color: rgb(99, 221, 221);
+}
+
+input {
+  padding: 5px;
+  border: 3px solid black;
 }
