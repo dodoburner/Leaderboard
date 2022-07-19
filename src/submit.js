@@ -1,3 +1,4 @@
+import appendScore from './appendScore'
 const nameInput = document.querySelector('.name');
 const scoreInput = document.querySelector('.score');
 
@@ -15,6 +16,7 @@ const postScore = () => {
         score: scoreValue
       })
     })
+    appendScore(nameValue, scoreValue)
   }
 }
 
