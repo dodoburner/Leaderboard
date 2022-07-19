@@ -2,7 +2,7 @@ import appendScore from './appendScore'
 const nameInput = document.querySelector('.name');
 const scoreInput = document.querySelector('.score');
 
-const postScore = () => {
+const submitScore = () => {
   let nameValue = nameInput.value
   let scoreValue = scoreInput.value
   if (nameValue !== '' && scoreValue !== '') {
@@ -20,4 +20,4 @@ const postScore = () => {
   }
 }
 
-export default postScore
+export default submitScore
