@@ -1,5 +1,6 @@
 import './style.css'
 import postScore from './submit'
+import displayScores from './displayScore';
 
 const submitBnt = document.querySelector('.submit-btn');
 let scores = document.querySelectorAll('li')
@@ -12,10 +13,8 @@ scores.forEach((score, index) => {
   }
 })
 
-fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jXwsUKYAzNn8VCQ6q31T/scores')
-  .then((response) => response.json())
-  .then((json) => console.log(json));
 
+displayScores()
 
 submitBnt.addEventListener('click', () => {
   postScore()
