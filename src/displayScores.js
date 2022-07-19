@@ -1,8 +1,7 @@
 import appendScore from './appendScore';
-
 const board = document.querySelector('.leaderboard');
 
-async function displayScores() {
+const displayScores = async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jXwsUKYAzNn8VCQ6q31T/scores');
   const data = await response.json();
   let dataArray = data.result;

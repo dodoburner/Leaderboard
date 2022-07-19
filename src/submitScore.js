@@ -1,11 +1,11 @@
 const nameInput = document.querySelector('.name');
 const scoreInput = document.querySelector('.score');
 
-const submitScore = () => {
+const submitScore = async () => {
   const nameValue = nameInput.value;
   const scoreValue = scoreInput.value;
   if (nameValue !== '' && scoreValue !== '') {
-    fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jXwsUKYAzNn8VCQ6q31T/scores', {
+    await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/jXwsUKYAzNn8VCQ6q31T/scores', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
