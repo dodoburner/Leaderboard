@@ -16,7 +16,6 @@ const submitScore = () => {
         score: scoreValue
       })
     })
-    appendScore(nameValue, scoreValue)
   }
 }
 

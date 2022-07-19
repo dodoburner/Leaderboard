@@ -1,11 +1,14 @@
 import './style.css'
 import submitScore from './submitScore'
 import displayScores from './displayScores';
-const submitBnt = document.querySelector('.submit-btn');
+const submitBtn = document.querySelector('.submit-btn');
+const refreshBtn = document.querySelector('.refresh-btn');
 
-displayScores()
-
-submitBnt.addEventListener('click', () => {
+submitBtn.addEventListener('click', () => {
   submitScore()
+})
+
+refreshBtn.addEventListener('click', () => {
+  displayScores()
 })
   
