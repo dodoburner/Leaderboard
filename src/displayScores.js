@@ -1,4 +1,5 @@
 import appendScore from './appendScore';
+
 const board = document.querySelector('.leaderboard');
 
 const displayScores = async () => {
@@ -10,6 +11,6 @@ const displayScores = async () => {
   dataArray.forEach((element) => {
     appendScore(element.user, element.score);
   });
-}
+};
 
 export default displayScores;

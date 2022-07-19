@@ -5,7 +5,7 @@ import displayScores from './displayScores';
 const submitBtn = document.querySelector('.submit-btn');
 const refreshBtn = document.querySelector('.refresh-btn');
 
-displayScores()
+displayScores();
 
 submitBtn.addEventListener('click', () => {
   submitScore();
