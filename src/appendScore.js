@@ -10,7 +10,7 @@ const appendScore = (name, number) => {
   if (index % 2 === 0) {
     score.classList.add('aqua');
   } else {
-    score.classList.remove('aqua');
+    score.classList.add('other');
   }
 };
 

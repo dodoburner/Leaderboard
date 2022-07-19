@@ -9,6 +9,8 @@ ul {
 body {
   margin: 0;
   padding: 5%;
+  background-color: azure;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 main {
@@ -37,12 +39,18 @@ button {
   width: 100px;
   height: 30px;
   box-shadow: 5px 5px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  background-color: rgb(252, 243, 230);
+  color: rgb(99, 221, 221);
+  cursor: pointer;
 }
 
 .main-right {
   display: flex;
   flex-direction: column;
-  gap: 10%;
+  gap: 40px;
 }
 
 .submit-btn {
@@ -57,13 +65,26 @@ li {
   list-style: none;
   font-size: 18px;
   padding: 5px;
+  font-weight: 500;
 }
 
 .aqua {
   background-color: rgb(99, 221, 221);
 }
 
+.other {
+  background-color: rgb(252, 243, 230);
+}
+
 input {
-  padding: 5px;
+  padding: 10px 20px;
   border: 3px solid black;
+  background-color: rgb(252, 243, 230);
+}
+
+input::placeholder {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(99, 221, 221);
 }
