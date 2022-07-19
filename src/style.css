@@ -6,10 +6,6 @@ ul {
   padding: 0;
 }
 
-li {
-  list-style: none;
-}
-
 body {
   margin: 0;
   padding: 5%;
@@ -58,6 +54,7 @@ ul {
 }
 
 li {
+  list-style: none;
   font-size: 18px;
   padding: 5px;
 }

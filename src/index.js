@@ -1,11 +1,16 @@
-import './style.css'
+import './style.css';
+import submitScore from './submitScore';
+import displayScores from './displayScores';
 
-let scores = document.querySelectorAll('li')
+const submitBtn = document.querySelector('.submit-btn');
+const refreshBtn = document.querySelector('.refresh-btn');
 
-scores.forEach((score, index) => {
-  if (index % 2 === 0) {
-    score.classList.add('aqua')
-  } else {
-    score.classList.remove('aqua')
-  }
-})
+displayScores();
+
+submitBtn.addEventListener('click', () => {
+  submitScore();
+});
+
+refreshBtn.addEventListener('click', () => {
+  displayScores();
+});
